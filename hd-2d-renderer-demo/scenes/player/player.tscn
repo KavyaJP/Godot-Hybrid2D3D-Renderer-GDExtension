@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://djuljgrvl2e53"]
+
+[ext_resource type="SpriteFrames" uid="uid://dcv4arsw2gmok" path="res://resources/player.tres" id="1_8afob"]
+
+[node name="Player" type="CharacterBody3D" unique_id=1680880119]
+
+[node name="HD2DSprite" type="HD2DSprite" parent="." unique_id=1425470351]
+sprite_frames = ExtResource("1_8afob")
+animation = "idle_e"
