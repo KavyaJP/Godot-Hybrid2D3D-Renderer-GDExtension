@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://b3hjwj3uf868j"]
+
+[ext_resource type="SpriteFrames" uid="uid://bvqjt3fs7v3tm" path="res://resources/player_spritesheet.tres" id="1_8afob"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_8afob"]
+height = 0.15039063
+radius = 0.030273438
+
+[node name="Player" type="CharacterBody3D" unique_id=1572117037]
+
+[node name="Sprite" type="Hybrid2D3DAnimatedSprite" parent="." unique_id=1931319317]
+sprite_height = 20.0
+offset = Vector2(0, 10)
+sprite_frames = ExtResource("1_8afob")
+animation = &"idle_s"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=990126817]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.07507324, 0)
+shape = SubResource("CylinderShape3D_8afob")

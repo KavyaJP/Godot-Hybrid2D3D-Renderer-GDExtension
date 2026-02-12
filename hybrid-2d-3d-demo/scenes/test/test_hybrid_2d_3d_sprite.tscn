@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dygnc53vckm4m"]
+
+[ext_resource type="Texture2D" uid="uid://c6a3tkq35p1yg" path="res://assets/sprite.svg" id="1_h6t1e"]
+
+[node name="Hybrid2D3DSprite" type="Hybrid2D3DSprite" unique_id=1837768184]
+sprite_height = 128.0
+offset = Vector2(0, 64)
+texture = ExtResource("1_h6t1e")

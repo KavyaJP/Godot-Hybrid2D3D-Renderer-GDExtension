@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dtftb36sj3xcv"]
+
+[ext_resource type="SpriteFrames" uid="uid://bvqjt3fs7v3tm" path="res://resources/player_spritesheet.tres" id="1_1fdfm"]
+
+[node name="Hybrid2D3DAnimatedSprite" type="Hybrid2D3DAnimatedSprite" unique_id=1951230437]
+sprite_height = 20.0
+offset = Vector2(0, 10)
+sprite_frames = ExtResource("1_1fdfm")
+animation = &"idle_e"

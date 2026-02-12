@@ -10,14 +10,14 @@ sources = Glob("src/*.cpp")
 
 if env["platform"] == "macos":
     library = env.SharedLibrary(
-        "hd-2d-renderer-demo/bin/libhd2d.{}.{}.framework/libhd2d.{}.{}".format(
+        "hybrid-2d-3d-demo/bin/libhybrid2d3d.{}.{}.framework/libhybrid2d3d.{}.{}".format(
             env["platform"], env["target"], env["platform"], env["target"]
         ),
         source=sources,
     )
 else:
     library = env.SharedLibrary(
-        "hd-2d-renderer-demo/bin/libhd2d{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
+        "hybrid-2d-3d-demo/bin/libhybrid2d3d{}{}".format(env["suffix"], env["SHLIBSUFFIX"]),
         source=sources,
     )
 
