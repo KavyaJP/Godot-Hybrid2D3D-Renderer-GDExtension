@@ -1,0 +1,17 @@
+[configuration]
+
+entry_symbol = "hybrid2d3d_library_init"
+compatibility_minimum = "4.3"
+
+[libraries]
+
+windows.debug.x86_64 = "bin/libhybrid2d3d.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "bin/libhybrid2d3d.windows.template_release.x86_64.dll"
+windows.x86_64 = "bin/libhybrid2d3d.windows.template_debug.x86_64.dll"
+
+linux.debug.x86_64 = "bin/libhybrid2d3d.linux.template_debug.x86_64.so"
+linux.release.x86_64 = "bin/libhybrid2d3d.linux.template_release.x86_64.so"
+linux.x86_64 = "bin/libhybrid2d3d.linux.template_debug.x86_64.so"
+
+macos.debug = "bin/libhybrid2d3d.macos.template_debug.framework"
+macos.release = "bin/libhybrid2d3d.macos.template_release.framework"

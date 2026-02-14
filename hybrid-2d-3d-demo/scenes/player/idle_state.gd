@@ -38,15 +38,15 @@ func _update_animation() -> void:
 		sprite.flip_h = true  # ...and flip!
 
 	# --- 2. DIAGONALS (NE, SE, SW, NW) ---
-	elif dir.z < -0.1 and dir.x > 0.1:        # North-East
-		sprite.play("idle_ne")
-	elif dir.z > 0.1 and dir.x > 0.1:         # South-East
+	elif dir.z < -0.1 and dir.x > 0.1:        # South-East
 		sprite.play("idle_se")
-	elif dir.z > 0.1 and dir.x < -0.1:        # South-West
-		sprite.play("idle_se") # Re-use SE...
-		sprite.flip_h = true   # ...and flip!
-	elif dir.z < -0.1 and dir.x < -0.1:       # North-West
+	elif dir.z > 0.1 and dir.x > 0.1:         # North-East
+		sprite.play("idle_ne")
+	elif dir.z > 0.1 and dir.x < -0.1:        # North-West
 		sprite.play("idle_ne") # Re-use NE...
+		sprite.flip_h = true   # ...and flip!
+	elif dir.z < -0.1 and dir.x < -0.1:       # South-West
+		sprite.play("idle_se") # Re-use SE...
 		sprite.flip_h = true   # ...and flip!
 		
 	# Fallback (Default to Front)
