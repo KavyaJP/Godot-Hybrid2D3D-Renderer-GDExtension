@@ -84,12 +84,13 @@ Used for characters, enemies, or interactive objects that use `SpriteFrames`.
 | `anchor_mode`           | `Enum`  | Controls the pivot point (`Center` or `Bottom Center`).                                                                                                                                          |
 | `set_pose(anim, frame)` | `void`  | **Method.** Instantly sets the current animation and frame index, then stops playback. <br>Use this in State Machines to strictly control visuals via code (e.g., `sprite.set_pose("jump", 2)`). |
 
-## 📝 Compiling from Source
-Requirements:
+## Installation
 
-- SCons
-- Python 3+
-- C++ Compiler (MSVC, GCC, or Clang)
+You can just Search and Download the `Hybrid 2D 3D Sprite & Animated Sprite` from Godot Asset Library.
+
+Or
+
+You can download from the release page.
 
 ## 📝 Compiling from Source
 
